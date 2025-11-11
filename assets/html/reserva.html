@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva — Turistar.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+        <i class="bi bi-globe2 fs-3 me-2"></i>
+        <span class="fw-bold">Turistar<span class="text-warning">.com</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="reserva.html">Reservar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container mt-4">
+      <!-- Hero Section -->
+      <div class="bg-light rounded-3 p-5 mb-5">
+        <h1 class="display-5 fw-bold mb-3">Sistema de Reservas</h1>
+        <p class="lead text-muted">Escolha seu destino e customize sua viagem de acordo com suas preferências.</p>
+        <div class="alert alert-info mt-3">
+          <i class="bi bi-info-circle me-2"></i>
+          <strong>Dica:</strong> Verifique nossas promoções especiais ao final desta página!
+        </div>
+      </div>
+
+      <!-- Abas de destinos -->
+      <ul class="nav nav-tabs mb-4" id="destinoTabs" role="tablist">
+        <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#america">América</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#europa">Europa</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#asia">Ásia</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#africa">África</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#oceania">Oceania</button></li>
+      </ul>
+
+      <!-- Conteúdo das abas -->
+      <div class="tab-content" id="destinoTabsContent">
+
+        <!-- AMÉRICA -->
+        <div class="tab-pane fade show active" id="america">
+          <h2 class="mb-4">Destinos na América</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Nova York</td><td>EUA</td><td>15/12/2025</td><td>American Airlines</td><td>R$ 3.920,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Miami</td><td>EUA</td><td>16/12/2025</td><td>LATAM</td><td>R$ 3.675,00</td></tr>
+                <tr><td>São Paulo</td><td>Buenos Aires</td><td>Argentina</td><td>18/12/2025</td><td>Aerolineas Argentinas</td><td>R$ 1.470,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Lima</td><td>Peru</td><td>20/12/2025</td><td>LATAM</td><td>R$ 2.205,00</td></tr>
+                <tr><td>São Paulo</td><td>Toronto</td><td>Canadá</td><td>22/12/2025</td><td>Air Canada</td><td>R$ 4.410,00</td></tr>
+                <tr><td>São Paulo</td><td>Cidade do México</td><td>México</td><td>19/12/2025</td><td>Aeroméxico</td><td>R$ 2.940,00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- EUROPA -->
+        <div class="tab-pane fade" id="europa">
+          <h2 class="mb-4">Destinos na Europa</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Paris</td><td>França</td><td>20/12/2025</td><td>Air France</td><td>R$ 4.240,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Lisboa</td><td>Portugal</td><td>21/12/2025</td><td>TAP</td><td>R$ 3.975,00</td></tr>
+                <tr><td>São Paulo</td><td>Roma</td><td>Itália</td><td>22/12/2025</td><td>ITA Airways</td><td>R$ 4.505,00</td></tr>
+                <tr><td>São Paulo</td><td>Madrid</td><td>Espanha</td><td>23/12/2025</td><td>Iberia</td><td>R$ 4.134,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Frankfurt</td><td>Alemanha</td><td>24/12/2025</td><td>Lufthansa</td><td>R$ 4.346,00</td></tr>
+                <tr><td>São Paulo</td><td>Londres</td><td>Reino Unido</td><td>25/12/2025</td><td>British Airways</td><td>R$ 4.612,50</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ÁSIA -->
+        <div class="tab-pane fade" id="asia">
+          <h2 class="mb-4">Destinos na Ásia</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Tóquio</td><td>Japão</td><td>20/12/2025</td><td>ANA</td><td>R$ 7.200,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Bangkok</td><td>Tailândia</td><td>22/12/2025</td><td>Thai Airways</td><td>R$ 6.850,00</td></tr>
+                <tr><td>São Paulo</td><td>Dubai</td><td>Emirados Árabes</td><td>24/12/2025</td><td>Emirates</td><td>R$ 5.950,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Pequim</td><td>China</td><td>26/12/2025</td><td>Air China</td><td>R$ 6.300,00</td></tr>
+                <tr><td>São Paulo</td><td>Seul</td><td>Coreia do Sul</td><td>27/12/2025</td><td>Korean Air</td><td>R$ 6.700,00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ÁFRICA -->
+        <div class="tab-pane fade" id="africa">
+          <h2 class="mb-4">Destinos na África</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Cidade do Cabo</td><td>África do Sul</td><td>20/12/2025</td><td>South African Airways</td><td>R$ 4.900,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Cairo</td><td>Egito</td><td>22/12/2025</td><td>EgyptAir</td><td>R$ 4.600,00</td></tr>
+                <tr><td>São Paulo</td><td>Nairóbi</td><td>Quênia</td><td>24/12/2025</td><td>Kenya Airways</td><td>R$ 5.200,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Casablanca</td><td>Marrocos</td><td>26/12/2025</td><td>Royal Air Maroc</td><td>R$ 4.850,00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- OCEANIA -->
+        <div class="tab-pane fade" id="oceania">
+          <h2 class="mb-4">Destinos na Oceania</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Sydney</td><td>Austrália</td><td>20/12/2025</td><td>Qantas</td><td>R$ 7.800,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Auckland</td><td>Nova Zelândia</td><td>22/12/2025</td><td>Air New Zealand</td><td>R$ 7.350,00</td></tr>
+                <tr><td>São Paulo</td><td>Melbourne</td><td>Austrália</td><td>24/12/2025</td><td>LATAM</td><td>R$ 7.650,00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Seção de Promoções -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-5 fw-bold">Promoções Especiais</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-success">
+            <div class="card-header bg-success text-white"><h5 class="mb-0">Férias em Família</h5></div>
+            <div class="card-body">
+              <p class="card-text">Pacotes com desconto de até 20% para famílias com 4+ pessoas</p>
+              <p class="text-success fw-bold">Válido até 31/12/2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-info">
+            <div class="card-header bg-info text-white"><h5 class="mb-0">Último Minuto</h5></div>
+            <div class="card-body">
+              <p class="card-text">Liquidação de pacotes com saída em até 15 dias - até 40% OFF</p>
+              <p class="text-info fw-bold">Ofertas limitadas!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-warning">
+            <div class="card-header bg-warning text-dark"><h5 class="mb-0">Primeira Viagem</h5></div>
+            <div class="card-body">
+              <p class="card-text">Desconto de R$ 500 para clientes novos em qualquer pacote</p>
+              <p class="text-warning fw-bold">Válido para primeira compra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo a Passo da Reserva -->
+    <div class="container mt-5 mb-5">
+      <h2 class="text-center mb-5 fw-bold">Passo a Passo da Reserva</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-search"></i>
+          </div>
+          <h5>1. Escolha</h5>
+          <p class="text-muted small">Selecione seu destino e datas</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-credit-card"></i>
+          </div>
+          <h5>2. Pagamento</h5>
+          <p class="text-muted small">Pagamento seguro e parcelado</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-check-circle"></i>
+          </div>
+          <h5>3. Confirmação</h5>
+          <p class="text-muted small">Receba sua reserva confirmada</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-airplane"></i>
+          </div>
+          <h5>4. Viagem</h5>
+          <p class="text-muted small">Aproveite sua experiência!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <strong>Turistar.com</strong>
+                    <div class="small">&copy; <span id="year"></span> Turistar. Todos os direitos reservados.</div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
